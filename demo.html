@@ -4,8 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Demo page</title>
+  <link href="assets/styles/common.css" href="assets/styles/style.css">
 </head>
 <body>
   <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
+
+<header>
+  <nav class="navbar">
+    <li class="navbar__list">
+      <a>Mulighetens marked</a>
+    </li>
+    <li class="navbar__list">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 0a.75.75 0 01.75.75v1.534c4.24.391 7.5 4.06 7.5 8.335 0 3.532.37 5.546.716 6.651.172.55.335.867.437 1.032.05.081.086.125.1.14l.003.004A.75.75 0 0121 19.75H3a.75.75 0 01-.6-1.2v-.001l.028-.042c.028-.045.075-.125.135-.245.12-.241.29-.643.467-1.249.352-1.21.72-3.234.72-6.394 0-4.247 3.287-7.938 7.5-8.334V.75A.75.75 0 0112 0zm0 3.75c-3.703 0-6.75 3.166-6.75 6.869 0 3.275-.382 5.442-.78 6.813-.09.313-.183.584-.27.818h15.52a8.375 8.375 0 01-.186-.533c-.405-1.296-.784-3.472-.784-7.098 0-3.731-3.014-6.869-6.75-6.869zM9.789 21.03a.75.75 0 01.93.509c.165.559.7.96 1.284.96.582 0 1.118-.401 1.282-.96a.75.75 0 111.44.422A2.856 2.856 0 0112.002 24c-1.248 0-2.37-.84-2.722-2.038a.75.75 0 01.509-.93z" clip-rule="evenodd"></path></svg>
+      <a href="">Varslinger</a>
+    </li>
+    <li class="navbar__list">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M1.5 12C1.5 6.201 6.201 1.5 12 1.5S22.5 6.201 22.5 12 17.799 22.5 12 22.5 1.5 17.799 1.5 12zM12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 6.75a.75.75 0 01.75.75v3.75h3.75a.75.75 0 010 1.5h-3.75v3.75a.75.75 0 01-1.5 0v-3.75H7.5a.75.75 0 010-1.5h3.75V7.5a.75.75 0 01.75-.75z" clip-rule="evenodd"></path></svg>
+      <a href="">Ny annonse</a>
+    </li>
+    <li class="navbar__list">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><g clip-path="url(#eUianclip0_1199_122)"><path fill="currentColor" fill-rule="evenodd" d="M1.72 1.72a.75.75 0 01.53-.22h19.5a.75.75 0 01.75.75v15a.75.75 0 01-.75.75h-10.5a.75.75 0 00-.45.15L6 21.75v-3a.75.75 0 00-.75-.75h-3a.75.75 0 01-.75-.75v-15a.75.75 0 01.22-.53zM2.25 0A2.25 2.25 0 000 2.25v15a2.25 2.25 0 002.25 2.25H4.5v3.75a.75.75 0 001.2.6l5.8-4.35h10.25A2.25 2.25 0 0024 17.25v-15A2.25 2.25 0 0021.75 0H2.25zm5.377 5.25a2.985 2.985 0 00-2.68 1.67.75.75 0 101.347.66 1.485 1.485 0 012.666 0 .75.75 0 101.346-.66 2.985 2.985 0 00-2.679-1.67zm7.416.452A2.985 2.985 0 0119.3 6.919a.75.75 0 01-1.346.662 1.485 1.485 0 00-2.666 0 .75.75 0 01-1.346-.662c.246-.5.627-.922 1.101-1.217zm-6.286 6.494a.75.75 0 10-1.01 1.108 6.497 6.497 0 008.754 0 .75.75 0 10-1.01-1.108 4.997 4.997 0 01-6.734 0z" clip-rule="evenodd"></path></g><defs><clipPath id="eUianclip0_1199_122"><path fill="currentColor" d="M0 0h24v24H0z"></path></clipPath></defs></svg>
+      <!--copied directly from the fabrics iconography site for FINN-->
+      <a href="">Meldinger</a>
+    </li>
+    <li class="navbar__list">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 32 32"><path fill="currentColor" fill-rule="evenodd" d="M1.75 16C1.75 8.13 8.13 1.75 16 1.75S30.25 8.13 30.25 16c0 4.337-1.937 8.22-4.993 10.834a13.746 13.746 0 00-18.514 0A14.218 14.218 0 011.75 16zm6.205 11.764A14.184 14.184 0 0016 30.25c2.985 0 5.756-.918 8.045-2.486a12.245 12.245 0 00-16.09 0zm17.72.665A15.682 15.682 0 0116 31.75C7.302 31.75.25 24.698.25 16S7.302.25 16 .25 31.75 7.302 31.75 16c0 5.048-2.375 9.542-6.069 12.424l-.007.005zM9.75 13c0-.815.156-1.594.44-2.308a12.364 12.364 0 008.143 3.058l-8.143-3.058 8.144 3.058c1.333 0 2.655-.214 3.915-.634A6.25 6.25 0 019.75 13zm8.584-.75c1.282 0 2.553-.226 3.755-.667A6.252 6.252 0 0010.932 9.34a10.864 10.864 0 007.401 2.909zM8.25 13a7.714 7.714 0 011.086-3.959A7.75 7.75 0 118.25 13z" clip-rule="evenodd"></path></svg>
+      <a href="">Min FINN</a>
+    </li>
+  </nav>
+</header>
+<div>
+  <a>
+    <img>
+  </a>
+</div>
+
+<div>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+<a>
+  <img>
+</a>
+</div>
+
+<section>
+  <h1>Anbefalinger til deg</h1>
+  <div>
+    <div class="card"></div>
+  </div>
+</section>
+
 </body>
 </html>
