@@ -1,3 +1,6 @@
+.navbar__ul {
+  display: flex;
+}
 .navbar__list {
   list-style: none;
   list-style-type: none;

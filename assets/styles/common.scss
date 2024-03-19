@@ -1,9 +1,13 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+// The css the  pages has in common?
 
 .navbar {
-        &__list{
+    &__ul{
+        display: flex;
+    }
+    &__list{
         list-style: none;
         list-style-type: none;
         display: flex;
