@@ -1,3 +1,10 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  max-width: 100%;
+}
 .navbar__ul {
   display: flex;
 }
@@ -6,4 +13,25 @@
   list-style-type: none;
   display: flex;
   text-decoration: none;
+  padding-right: 20px;
+}
+
+.grid {
+  display: grid;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  grid-template-columns: repeat(6, minmax(10.4rem, 1fr));
+  grid-template-rows: 2fr 2fr;
+}
+
+.searchbar {
+  display: flex;
+}
+.searchbar__input {
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+}
+.searchbar__map {
+  padding-left: 10px;
 }/*# sourceMappingURL=common.css.map */
