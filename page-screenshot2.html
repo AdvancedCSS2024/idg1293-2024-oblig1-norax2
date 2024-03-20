@@ -3,9 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Screenshot 1 page</title>
+  <link rel="stylesheet" href="/assets/styles/style.css">
+  <title>Screenshot 2 page</title>
 </head>
 <body>
-  
+  <div class="left"> <!--Left side of the page-->
+    <div class="left__img">
+      <img class="img--phone" src="/misc/img/finn_iphone.png" alt="Iphone with finn.no">
+    </div>
+    <div class="left__text">
+      <p>Logg inn for å sende meldinger, lagre favoritter og søk. Du får også varsler når det skjer noe nytt!</p>
+      <p>Problemer med innloggingen? <a href="">Her kan du finne hjelp</a></p>
+      <a href="">Tilbake til finn</a>
+    </div>
+  </div>
+  <div class="right"> <!--Right side of the page-->
+      <div class="right__card"><!--Card on the right side containing form and buttons-->
+        <div class="right__logo"> <!--Logos on top of the card on the right side-->
+          <img class="right__logo--finn" src="/misc/img/finn-logo.jpg" alt="Finn.no logo">
+          <img class="right__logo--schibsted" src="/misc/img/schibsted_logo.png" alt="Schibsted logo">
+       </div>
+      <form class="form"> <!--Form for logging in-->
+          <div class="form__titlebar">
+            <h1 class="form__titlebar_heading">Logg inn</h1>
+        </div>
+        <div>
+            <label for="username" class="label__username">Skriv inn din e-postadresse *</label>
+            <input type="email" class="input__username" name="username" required>
+            <p>*Nødvendig felt</p>
+        </div>
+        <div>
+            <label for="password" class="label__password">Vennligst oppgi passordet ditt *</label>
+            <input type="password" class="input__password" name="password" required>
+            <p>*Nødvendig felt</p>
+        </div>
+        <div>
+            <button type="button" class="button__forgot"><span>Glemt passord?</span></button>
+        </div>
+        <div>
+            <input type="checkbox" class="checkbox__remember" checked>
+            <label for="remember" class="checkbox__label">Hold meg innlogget</label>
+            <button type="button" class="button__info">info</button>
+        </div>
+        <div>
+          <button class="button__login">Logg på</button>
+          <button class="button__new">Opprett ny konto</button>
+      </form>
+    </div>
+  </div>
+  <div class="right__links"> <!--info links to the bottom of the right side-->
+    <a href="www.finn.no">Hjelp</a>
+    <a href="www.finn.no">Personvernerklæring</a>
+    <a href="www.finn.no">Vilkår</a>
+    <a href="www.finn.no">Om Schibsted-konto</a>
+  </div>
+  </div>
 </body>
 </html>
+<!--The end-->

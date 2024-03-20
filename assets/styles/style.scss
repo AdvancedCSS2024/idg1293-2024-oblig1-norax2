@@ -1,4 +1,6 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
+$gray: gray;
+
 .navbar {
     &__list{
     list-style: none;
@@ -6,3 +8,52 @@
     display: flex;
 }
 }
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  background-color: $gray;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+  img {
+    height: auto;
+    width: auto;
+  }
+  
+  .left {
+    max-width: 400px;
+    height: auto;
+    background-color: rgb(190, 255, 255);
+    text-align: center;
+  }
+  .left__img {
+    justify-content: center;
+  }
+  
+  .right {
+    max-width: 450px;
+  }
+  .right__card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px gray;
+    
+  }
+  
+  .right__logo img {
+    max-width:100px ;
+    height: auto;
+  }
+  
+  
+  .button {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+  }
+  
