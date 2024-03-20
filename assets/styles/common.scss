@@ -3,6 +3,9 @@
 // Example: input, button, card ...
 // The css the  pages has in common?
 
+$grey: gray;
+$blue: #06BEFB;
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -28,6 +31,10 @@
     max-width: fit-content;
     grid-template-columns: repeat(6, minmax(10.4rem,1fr));
     grid-template-rows: 2fr 2fr;
+    &__link{
+        display: flex;
+        flex-direction: column;
+    }
 } 
 
 //.subpages {
@@ -45,5 +52,20 @@
 
     &__map {
         padding-left: 10px;
+    }
+}
+
+.card {
+    background-color: $blue;
+    background-image: url(Cat.jpg);    
+    background-size: 300px;
+    width: 450px;
+    border-radius: 5px;
+    &__img {
+        background-size: 300px;
+        max-width: 450px;
+    }
+    &__svg{
+        position: absolute;
     }
 }
