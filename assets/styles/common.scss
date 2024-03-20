@@ -64,8 +64,12 @@ $blue: #06BEFB;
     &__img {
         background-size: 300px;
         max-width: 450px;
+        border-radius: 5px;
+        z-index: 1;
     }
     &__svg{
         position: absolute;
+        right: 0px;
+        z-index: 2;
     }
 }
