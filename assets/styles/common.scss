@@ -4,6 +4,7 @@
 
 //Screenshot 1's css because it wouldn't work otherwise
 $darkblue: #0063FB;
+$blue: #06BEFB;
 $stone: #767676;
 $licorice: #464646;
 $sardine: #C3CCD9;
@@ -111,8 +112,7 @@ $sardine: #C3CCD9;
     }
 }
 
-.card {
-    background-color: $blue;   
+.card {  
     max-width: 30%;
     min-width: none;
     border-radius: 5px;
@@ -129,8 +129,5 @@ $sardine: #C3CCD9;
     }
     &__text{
         margin-left: 1rem;
-    }
-    &__button--heart{
-        position: absolute;
     }
 }
