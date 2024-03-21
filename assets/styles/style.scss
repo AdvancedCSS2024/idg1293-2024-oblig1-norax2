@@ -1,13 +1,159 @@
-
-// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
-$white: #ffffff;
-$lightblue: #f3f9ff;
+//Screenshot 1
 $blue: #06BEFB;
 $darkblue: #0063FB;
-$nightblue: #00327c;
 $stone: #767676;
 $licorice: #464646;
 $sardine: #C3CCD9;
+
+* {    
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.header {
+    border-bottom: 1px solid $stone;
+}
+
+.navbar {
+    max-width: 1010px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &__a {
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        text-decoration: none;
+        padding-right: 20px;
+        border-bottom: 1.5px solid transparent;
+        color: $sardine;
+        &:hover{
+            border-color: $darkblue;
+        }
+//I was hoping it would colour the line underneat, but it just colours right under the text
+    }  
+    &__logo {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-right: auto;
+    }
+    &__icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    &__text{
+        color: $licorice;
+        margin: auto;
+        padding-left: 5px;
+    }
+}
+
+.div{
+    &__top{
+        margin-top: 30px;
+    }
+}
+
+//code hevily inspired by the inspected FINN.no page, but slightly freestyled
+.grid {
+    display: grid;
+    max-width: fit-content;
+    grid-template-columns: repeat(6, minmax(10.4rem,1fr));
+    grid-template-rows: 2fr 2fr;
+    margin: auto;
+    &__link {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30%;
+        color: $blue;
+    }
+    &__link:hover {
+        color: $stone;
+    }        
+    &__text {
+        color: $licorice;
+    }
+    &__text:hover {
+        color: $stone;
+    } 
+}
+
+//}
+//tried putting the box-sizing into the upper * {, but it wouldn't do what it was supposed to do
+//AKA I wanted the searchbar to be bigger but it wouldn't form no matter what.
+* {
+    box-sizing: border-box;
+}
+
+.searchbar {
+    display: flex;
+    margin: auto;
+    &__input {
+        border-radius: 5px;
+        width: 100%;
+        height: 40px;    
+        width: calc(100% - 4rem);
+        border: 2px solid $stone;
+    }
+    &__map {
+        padding-left: 10px;
+    }
+}
+
+.section {
+    padding-top: 30px;
+    &__div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__top{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+    }
+    &__text{
+        color: $stone;
+    }
+    &__a{
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 10px;
+        color: $darkblue;
+    }
+        &__a:hover{
+            text-decoration: underline;
+        }
+    
+}
+
+.card {   
+    max-width: 30%;
+    min-width: none;
+    border-radius: 5px;
+    margin: 10px;
+    &__img {
+        display: block;
+        margin-right: 5%;
+        margin-left: 5%;
+        max-width: 90%;
+        padding-top: 5%;
+        min-width: 10%;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+    &__text{
+        margin-left: 2rem;
+    }
+}
+//screenshot 2
+$white: #ffffff;
+$lightblue: #f3f9ff;
+$nightblue: #00327c;
 $lightgray: #dddddd;
 $fairgray:#f3f6f8;
 
@@ -152,4 +298,3 @@ body {
     color: $stone;
   }
 }
-// USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
