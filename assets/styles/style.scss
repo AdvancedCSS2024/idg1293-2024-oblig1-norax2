@@ -1,5 +1,5 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
-$gray: gray;
+$gray: lightgray;
 
 .navbar {
     &__list{
@@ -8,52 +8,143 @@ $gray: gray;
     display: flex;
 }
 }
+
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-  background-color: $gray;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F8F8;
   display: flex;
-  justify-content: center;
   padding: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
-  img {
-    height: auto;
-    width: auto;
+.left {
+  justify-content: center;
+  align-items: center ;
+  max-width: 500px;
+  height: 400px;
+  padding: 60px;
+  background-color: #f3f9ff;
+  text-align: center;
+  &__img{
+
   }
+  &__text{
   
-  .left {
-    max-width: 400px;
-    height: auto;
-    background-color: rgb(190, 255, 255);
-    text-align: center;
   }
-  .left__img {
-    justify-content: center;
-  }
-  
-  .right {
-    max-width: 450px;
-  }
-  .right__card {
-    background-color: white;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  &__card {
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px gray;
-    
+    height: 612px;
   }
-  
-  .right__logo img {
-    max-width:100px ;
+  &__card__topbar{
+    display: flex;
+    align-items: center;
+    max-width: 400px;
     height: auto;
+    justify-content: space-between;
+    height: 86px;
+    &__logo__finn{
+      max-width: 40px;
+      height: 18px;
+    }
+    &__logo__schibsted{
+      max-width: 120px;
+      height: 24px;
+    }
   }
-  
-  
-  .button {
-    background-color: #007bff; /* Blue color */
-    color: #fff; /* White text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* No border */
-    border-radius: 20px; /* Rounded corners */
-    cursor: pointer; /* Cursor style */
+  &__form__titlebar{
+    max-width: 386px;
+    height: 32px;
+    &__heading{
+      font-size: 24px;
+    }
   }
-  
+  &__form{
+    &__input{
+      background-color: #F8F8F8;
+      color: darkgrey;
+      border: none;
+      border-bottom: 1px solid black;
+      font-size: 1em;
+      width: 360px;
+      height: 16px;
+      padding: 27px 12px 10px;
+      border-radius: 10px 10px 0px 0px;
+    }
+    &__necessary{
+      margin: 5px 0px 10px 0px;
+      font-size: 0.8em;
+      color: gray;
+    }
+    &__button{
+      margin-top: 20px;
+    &__forgot {
+      font-size: 15.2px;
+      border: none;
+      background-color: #ffffff;
+      color: #3673d4;
+      text-decoration: underline;
+      margin: 20px 0px 20px 0px;
+    }
+    &__login{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #3673d4;
+      color: #ffffff;
+      font-size: 1.3em;
+      margin-top: 60px;
+      border: none;
+      width: 384px;
+      height: 13px;
+      padding: 30px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    &__login:hover{
+      background-color: darkblue;
+    }
+    &__new{    
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      color:#3673d4;
+      font-size: 1.3em;
+      margin: 16px 0 0;
+      border: none;
+      width: 386px;
+      height: 13px;
+      padding: 30px;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    &__new:hover{
+      box-shadow: 5px 5px 20px gray;
+    }
+  }
+  }
+  &__bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 16px 0;
+  }
+  &__bottom__links{
+    font-size: 14px;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    color: gray;
+  }
+}
