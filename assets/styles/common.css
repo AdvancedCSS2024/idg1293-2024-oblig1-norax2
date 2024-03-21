@@ -11,6 +11,8 @@
   max-width: 1010px;
   margin: 0 auto;
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .navbar__a {
   list-style: none;
@@ -37,7 +39,7 @@
 }
 
 .div__top {
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .grid {
@@ -67,15 +69,21 @@
   color: #767676;
 }
 
-.grid .searchbar {
+.grid * {
+  box-sizing: border-box;
+}
+
+.searchbar {
   display: flex;
 }
-.grid .searchbar__input {
-  border-radius: 100%;
+.searchbar__input {
+  border-radius: 5px;
   width: 100%;
   height: 40px;
+  width: calc(100% - 4rem);
+  border: 2px solid #767676;
 }
-.grid .searchbar__map {
+.searchbar__map {
   padding-left: 10px;
 }
 
@@ -86,6 +94,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+.section__text {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -118,4 +130,7 @@
 }
 .card__text {
   margin-left: 1rem;
+}
+.card__button--heart {
+  position: absolute;
 }/*# sourceMappingURL=common.css.map */
