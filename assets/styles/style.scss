@@ -1,5 +1,14 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
-$gray: lightgray;
+$white: #ffffff;
+$lightblue: #f3f9ff;
+$blue: #06BEFB;
+$darkblue: #0063FB;
+$nightblue: #00327c;
+$stone: #767676;
+$licorice: #464646;
+$sardine: #C3CCD9;
+$lightgray: #dddddd;
+$fairgray:#f3f6f8;
 
 .navbar {
     &__list{
@@ -11,7 +20,7 @@ $gray: lightgray;
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #F8F8F8;
+  background-color: $fairgray;
   display: flex;
   padding: 60px;
   align-items: center;
@@ -24,7 +33,7 @@ body {
   max-width: 500px;
   height: 400px;
   padding: 60px;
-  background-color: #f3f9ff;
+  background-color: $lightblue;
   text-align: center;
 }
 
@@ -33,10 +42,10 @@ body {
   flex-direction: column;
   max-width: 450px;
   &__card {
-    background-color: #ffffff;
+    background-color: $white;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px gray;
+    box-shadow: 10px 10px 20px $stone;
     height: 612px;
   }
   &__card__topbar{
@@ -64,10 +73,10 @@ body {
   }
   &__form{
     &__input{
-      background-color: #F8F8F8;
-      color: darkgrey;
+      background-color: $lightgray;
+      color: $stone;
       border: none;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid $licorice;
       font-size: 1em;
       width: 360px;
       height: 16px;
@@ -77,15 +86,15 @@ body {
     &__necessary{
       margin: 5px 0px 10px 0px;
       font-size: 0.8em;
-      color: gray;
+      color: $stone;
     }
     &__button{
       margin-top: 20px;
     &__forgot {
       font-size: 15.2px;
       border: none;
-      background-color: #ffffff;
-      color: #3673d4;
+      background-color: $white;
+      color: $darkblue;
       text-decoration: underline;
       margin: 20px 0px 20px 0px;
     }
@@ -94,8 +103,8 @@ body {
       text-align: center;
       justify-content: center;
       align-items: center;
-      background-color: #3673d4;
-      color: #ffffff;
+      background-color: $darkblue;
+      color: $white;
       font-size: 1.3em;
       margin-top: 60px;
       border: none;
@@ -106,15 +115,15 @@ body {
       font-weight: bold;
     }
     &__login:hover{
-      background-color: darkblue;
+      background-color: $nightblue;
     }
     &__new{    
       display: flex;
       text-align: center;
       justify-content: center;
       align-items: center;
-      background-color: #ffffff;
-      color:#3673d4;
+      background-color: $white;
+      color:$darkblue;
       font-size: 1.3em;
       margin: 16px 0 0;
       border: none;
@@ -125,7 +134,7 @@ body {
       font-weight: bold;
     }
     &__new:hover{
-      box-shadow: 5px 5px 20px gray;
+      box-shadow: 5px 5px 20px $stone;
     }
   }
   }
@@ -139,6 +148,6 @@ body {
     text-decoration: none;
     align-items: center;
     text-align: center;
-    color: gray;
+    color: $stone;
   }
 }

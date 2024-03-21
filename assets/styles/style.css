@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #F8F8F8;
+  background-color: #f3f6f8;
   display: flex;
   padding: 60px;
   align-items: center;
@@ -32,7 +32,7 @@ body {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 20px;
-  box-shadow: 10px 10px 20px gray;
+  box-shadow: 10px 10px 20px #767676;
   height: 612px;
 }
 .right__card__topbar {
@@ -59,10 +59,10 @@ body {
   font-size: 24px;
 }
 .right__form__input {
-  background-color: #F8F8F8;
-  color: darkgrey;
+  background-color: #dddddd;
+  color: #767676;
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #464646;
   font-size: 1em;
   width: 360px;
   height: 16px;
@@ -72,7 +72,7 @@ body {
 .right__form__necessary {
   margin: 5px 0px 10px 0px;
   font-size: 0.8em;
-  color: gray;
+  color: #767676;
 }
 .right__form__button {
   margin-top: 20px;
@@ -81,7 +81,7 @@ body {
   font-size: 15.2px;
   border: none;
   background-color: #ffffff;
-  color: #3673d4;
+  color: #0063FB;
   text-decoration: underline;
   margin: 20px 0px 20px 0px;
 }
@@ -90,7 +90,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #3673d4;
+  background-color: #0063FB;
   color: #ffffff;
   font-size: 1.3em;
   margin-top: 60px;
@@ -102,7 +102,7 @@ body {
   font-weight: bold;
 }
 .right__form__button__login:hover {
-  background-color: darkblue;
+  background-color: #00327c;
 }
 .right__form__button__new {
   display: flex;
@@ -110,7 +110,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
-  color: #3673d4;
+  color: #0063FB;
   font-size: 1.3em;
   margin: 16px 0 0;
   border: none;
@@ -121,7 +121,7 @@ body {
   font-weight: bold;
 }
 .right__form__button__new:hover {
-  box-shadow: 5px 5px 20px gray;
+  box-shadow: 5px 5px 20px #767676;
 }
 .right__bottom {
   display: flex;
@@ -133,5 +133,5 @@ body {
   text-decoration: none;
   align-items: center;
   text-align: center;
-  color: gray;
+  color: #767676;
 }/*# sourceMappingURL=style.css.map */
