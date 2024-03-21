@@ -3,7 +3,6 @@
 // Example: input, button, card ...
 
 //Screenshot 1's css because it wouldn't work otherwise
-$blue: #06BEFB;
 $darkblue: #0063FB;
 $stone: #767676;
 $licorice: #464646;
@@ -31,11 +30,9 @@ $sardine: #C3CCD9;
         text-decoration: none;
         padding-right: 20px;
         border-bottom: 1.5px solid transparent;
-        color: $sardine;
         &:hover{
             border-color: $darkblue;
         }
-//I was hoping it would colour the line underneat, but it just colours right under the text
     }  
     &__logo {
         align-items: center;
@@ -48,11 +45,6 @@ $sardine: #C3CCD9;
         justify-content: center;
         align-items: center;
         margin-left: 10px;
-    }
-    &__text{
-        color: $licorice;
-        margin: auto;
-        padding-left: 5px;
     }
 }
 
@@ -68,7 +60,7 @@ $sardine: #C3CCD9;
     max-width: fit-content;
     grid-template-columns: repeat(6, minmax(10.4rem,1fr));
     grid-template-rows: 2fr 2fr;
-    margin: auto;
+    padding-left: 5%;
     &__link {
         display: flex;
         flex-direction: column;
@@ -94,7 +86,6 @@ $sardine: #C3CCD9;
 
 .searchbar {
     display: flex;
-    margin: auto;
     &__input {
         border-radius: 5px;
         width: 100%;
@@ -108,33 +99,20 @@ $sardine: #C3CCD9;
 }
 
 .section {
-    padding-top: 30px;
+    padding-top: 10%;
     &__div{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    &__top{
+    &__text{
         display: flex;
         flex-wrap: wrap;
-        padding-left: 50px;
     }
-    &__text{
-        color: $stone;
-    }
-    &__a{
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-left: 10px;
-        color: $darkblue;
-    }
-        &__a:hover{
-            text-decoration: underline;
-        }
-    
 }
 
-.card {   
+.card {
+    background-color: $blue;   
     max-width: 30%;
     min-width: none;
     border-radius: 5px;
@@ -146,10 +124,13 @@ $sardine: #C3CCD9;
         max-width: 90%;
         padding-top: 5%;
         min-width: 10%;
-        border-radius: 5%;
+        border-radius: 5px;
         overflow: hidden;
     }
     &__text{
-        margin-left: 2rem;
+        margin-left: 1rem;
+    }
+    &__button--heart{
+        position: absolute;
     }
 }
