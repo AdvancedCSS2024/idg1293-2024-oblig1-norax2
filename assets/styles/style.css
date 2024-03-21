@@ -1,1 +1,284 @@
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
+=======
+/*Screenshot 1*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.header {
+  border-bottom: 1px solid #767676;
+}
+
+.navbar {
+  max-width: 1010px;
+  margin: 0 auto;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar__a {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  padding-right: 20px;
+  border-bottom: 1.5px solid transparent;
+  color: #C3CCD9;
+}
+.navbar__a:hover {
+  border-color: #0063FB;
+}
+.navbar__logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: auto;
+}
+.navbar__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.navbar__text {
+  color: #464646;
+  margin: auto;
+  padding-left: 5px;
+}
+
+.div__top {
+  margin-top: 30px;
+}
+
+.grid {
+  display: grid;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  grid-template-columns: repeat(6, minmax(10.4rem, 1fr));
+  grid-template-rows: 2fr 2fr;
+  margin: auto;
+}
+.grid__link {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30%;
+  color: #06BEFB;
+}
+.grid__link:hover {
+  color: #767676;
+}
+.grid__text {
+  color: #464646;
+}
+.grid__text:hover {
+  color: #767676;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.searchbar {
+  display: flex;
+  margin: auto;
+}
+.searchbar__input {
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  width: calc(100% - 4rem);
+  border: 2px solid #767676;
+}
+.searchbar__map {
+  padding-left: 10px;
+}
+
+.section {
+  padding-top: 30px;
+}
+.section__div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section__top {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+}
+.section__text {
+  color: #767676;
+}
+.section__a {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 10px;
+  color: #0063FB;
+}
+.section__a:hover {
+  text-decoration: underline;
+}
+
+.card {
+  max-width: 30%;
+  min-width: none;
+  border-radius: 5px;
+  margin: 10px;
+}
+.card__img {
+  display: block;
+  margin-right: 5%;
+  margin-left: 5%;
+  max-width: 90%;
+  padding-top: 5%;
+  min-width: 10%;
+  border-radius: 5%;
+  overflow: hidden;
+}
+.card__text {
+  margin-left: 2rem;
+}
+
+
+/*Nora
+Nora Olsen Myhren*/
+.navbar__list {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f3f6f8;
+  display: flex;
+  padding: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  height: 400px;
+  padding: 60px;
+  background-color: #f3f9ff;
+  text-align: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+}
+.right__card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px #767676;
+  height: 612px;
+}
+.right__card__topbar {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  height: auto;
+  justify-content: space-between;
+  height: 86px;
+}
+.right__card__topbar__logo__finn {
+  max-width: 40px;
+  height: 18px;
+}
+.right__card__topbar__logo__schibsted {
+  max-width: 120px;
+  height: 24px;
+}
+.right__form__titlebar {
+  max-width: 386px;
+  height: 32px;
+}
+.right__form__titlebar__heading {
+  font-size: 24px;
+}
+.right__form__input {
+  background-color: #dddddd;
+  color: #767676;
+  border: none;
+  border-bottom: 1px solid #464646;
+  font-size: 1em;
+  width: 360px;
+  height: 16px;
+  padding: 27px 12px 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+.right__form__necessary {
+  margin: 5px 0px 10px 0px;
+  font-size: 0.8em;
+  color: #767676;
+}
+.right__form__button {
+  margin-top: 20px;
+}
+.right__form__button__forgot {
+  font-size: 15.2px;
+  border: none;
+  background-color: #ffffff;
+  color: #0063FB;
+  text-decoration: underline;
+  margin: 20px 0px 20px 0px;
+}
+.right__form__button__login {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #0063FB;
+  color: #ffffff;
+  font-size: 1.3em;
+  margin-top: 60px;
+  border: none;
+  width: 384px;
+  height: 13px;
+  padding: 30px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.right__form__button__login:hover {
+  background-color: #00327c;
+}
+.right__form__button__new {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #0063FB;
+  font-size: 1.3em;
+  margin: 16px 0 0;
+  border: none;
+  width: 386px;
+  height: 13px;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.right__form__button__new:hover {
+  box-shadow: 5px 5px 20px #767676;
+}
+.right__bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 16px 0;
+}
+.right__bottom__links {
+  font-size: 14px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  color: #767676;
+}/*# sourceMappingURL=style.css.map */ 
+>>>>>>> 0b366e3e6e68d7d205a5a9541fea860c98cdcd77
